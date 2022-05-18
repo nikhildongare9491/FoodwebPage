@@ -1,0 +1,126 @@
+@media (max-width: 991px) {
+    header,
+    header.sticky{
+        padding: 10px 20px;
+    }
+    header .nav{
+        display: none;
+    }
+    header .nav.active{
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 60px;
+        right: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+        background-color: whitesmoke;
+        opacity: 0.3;
+        width: 200px;
+        height: 100vh;
+    }
+    header .nav.active li{
+        margin-top: 30px;
+    }
+    header .nav.active li:last-of-type{
+        margin-bottom: 0px;
+    }
+    header .nav li{
+        margin-left: 0;
+    }
+    header .nav li a{
+        color: goldenrod;
+        font-size: 1.6em;
+        font-weight: bolder;
+    }
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(images/menuBar.jpeg);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuToggle.active{
+        background: url(images/closeBtn.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    header.sticky .menuToggle{
+        filter: invert(1);
+    }
+
+    section{
+        padding: 20px;
+    }
+    .banner .content h2{
+        font-size: 3em;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .about {
+        padding: 40px;
+    }
+    .titleText{
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
+    .row .col50{
+        width: 100%;
+    }
+    .row .col50 .imgBx{
+        height: 300px;
+        margin-top: 20px;
+    }
+    .menu .content,
+    .menu .content .box{
+        margin-top: 10px;
+    }
+    .menu .content .box .imgBX{
+        height: 260px;
+    }
+    .expert .titleText,
+    .testimonials .titleText,
+    .contact .titleText{
+        margin-bottom: 10px;
+    }
+    .contact{
+        height: 80vh;
+    }
+    .contact .contactForm{
+        margin-top: 40px;
+    }
+    .contact .contactForm h3{
+        text-align: center;
+    }
+    .contact .contactForm .inputBox:last-child{
+        margin-bottom: 30px;
+    }
+    .contact .contactForm .inputBox input[type="submit"]{
+        position: absolute;
+        right: 35%;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner .content h2,
+    .about .row .col50 .titleText,
+    .menu .title .titleText{
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+    .banner .content p,
+    .about .row .col50 p,
+    .menu .title p{
+        font-size: 0.5em;
+    } 
+}

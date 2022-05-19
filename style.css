@@ -289,7 +289,7 @@ header .nav li a:hover{
 }
 
 .contact{
-    background-image: url(/images/contact.jpg);
+    background-image: url(./images/contact.jpg);
     background-size: cover;
     height: 90vh;
 }

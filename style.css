@@ -28,6 +28,8 @@ p{
 .banner .content h2{
     font-size: 5em;
     color: #fff;
+    text-shadow: 5px 5px 14px #8540F5;
+    margin-bottom: 10px;
 }
 .banner .content p{
     font-weight: 400;
@@ -48,6 +50,9 @@ p{
     transition: 0.5s;
 }
 .btn:hover{
+    background: #DE5C9D;
+    color: #000;
+    font-weight: 600;
     letter-spacing: 6px;
 }
 header{
